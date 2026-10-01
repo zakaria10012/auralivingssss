@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LuxeLiving Interiors | Luxury Furniture & Home Interiors</title>
+    <meta
+      name="description"
+      content="LuxeLiving Interiors — handcrafted luxury furniture and timeless interior design. Discover sofas, armchairs, dining tables, lighting, and bedroom pieces."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+  <body>
+    <!-- ===== Navigation Bar ===== -->
+    <header class="site-header" id="siteHeader">
+      <nav class="navbar">
+        <a href="#home" class="logo" data-demo>
+          <span class="logo-main">LuxeLiving</span>
+          <span class="logo-sub">Interiors</span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#products" data-demo>Collections</a></li>
+          <li><a href="#about" data-demo>About</a></li>
+          <li><a href="#showroom" data-demo>Showroom</a></li>
+          <li><a href="#footer" data-demo>Contact</a></li>
+        </ul>
+
+        <button class="btn-shop" data-demo>Shop Now</button>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+
+      <!-- Mobile menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#products" data-demo>Collections</a>
+        <a href="#about" data-demo>About</a>
+        <a href="#showroom" data-demo>Showroom</a>
+        <a href="#footer" data-demo>Contact</a>
+        <button class="btn-shop mobile" data-demo>Shop Now</button>
+      </div>
+    </header>
+
+    <!-- ===== Hero Section ===== -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Timeless Design, Modern Living</p>
+        <h1 class="hero-title">
+          Furniture That Defines
+          <span class="hero-title-accent">Your Space</span>
+        </h1>
+        <p class="hero-subtitle">
+          Discover our curated collection of handcrafted luxury furniture —
+          where artisan heritage meets contemporary elegance.
+        </p>
+        <div class="hero-actions">
+          <button class="btn-primary" data-demo>Explore Collection</button>
+          <button class="btn-ghost" data-demo>View Lookbook</button>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ===== Product Catalog ===== -->
+    <section class="products-section" id="products">
+      <div class="section-header">
+        <p class="section-eyebrow">The Collection</p>
+        <h2 class="section-title">Curated Luxury Pieces</h2>
+        <p class="section-description">
+          Each piece is thoughtfully selected to bring elegance, comfort, and
+          sophistication to every corner of your home.
+        </p>
+      </div>
+
+      <div class="catalog-controls">
+        <div class="filter-bar" id="filterBar">
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="sofas">Sofas</button>
+          <button class="filter-btn" data-category="armchairs">Armchairs</button>
+          <button class="filter-btn" data-category="tables">Tables</button>
+          <button class="filter-btn" data-category="lighting">Lighting</button>
+          <button class="filter-btn" data-category="bedroom">Bedroom</button>
+        </div>
+
+        <div class="search-box">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.3-4.3" />
+          </svg>
+          <input type="text" id="searchInput" placeholder="Search furniture..." />
+        </div>
+      </div>
+
+      <div class="product-grid" id="productGrid">
+        <!-- Products injected by script.js -->
+      </div>
+
+      <div class="no-results" id="noResults" style="display: none">
+        <p>No pieces found. Try a different search or category.</p>
+      </div>
+    </section>
+
+    <!-- ===== About Section ===== -->
+    <section class="about-section" id="about">
+      <div class="about-image-wrap">
+        <img
+          src="https://images.pexels.com/photos/6969781/pexels-photo-6969781.jpeg?auto=compress&cs=tinysrgb&h=800&w=1000"
+          alt="LuxeLiving Interiors luxury furniture showroom"
+          loading="lazy"
+        />
+        <div class="about-badge">
+          <span class="about-badge-number">25+</span>
+          <span class="about-badge-label">Years of Excellence</span>
+        </div>
+      </div>
+      <div class="about-content">
+        <p class="section-eyebrow">Our Story</p>
+        <h2 class="section-title left">Where Artistry Meets Living</h2>
+        <p class="about-text">
+          For over two decades, LuxeLiving Interiors has been crafting furniture that
+          transforms houses into homes. Our philosophy is simple: every piece
+          should tell a story, serve a purpose, and stand the test of time.
+        </p>
+        <div class="features">
+          <div class="feature">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2 2 7l10 5 10-5-10-5Z" />
+                <path d="m2 17 10 5 10-5" />
+                <path d="m2 12 10 5 10-5" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="feature-title">Bespoke Craftsmanship</h3>
+              <p class="feature-text">Each piece is handcrafted by master artisans using traditional techniques passed down through generations.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="feature-title">Premium Materials</h3>
+              <p class="feature-text">We source only the finest woods, fabrics, and metals from sustainable suppliers worldwide.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 8v8M8 12h8" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="feature-title">Timeless Design</h3>
+              <p class="feature-text">Our collections blend classic elegance with modern aesthetics for pieces that never go out of style.</p>
+            </div>
+          </div>
+        </div>
+        <button class="btn-outline" data-demo>Visit Our Showroom</button>
+      </div>
+    </section>
+
+    <!-- ===== CTA / Showroom Section ===== -->
+    <section class="cta-section" id="showroom">
+      <div class="cta-overlay"></div>
+      <div class="cta-content">
+        <h2 class="cta-title">Experience Luxury in Person</h2>
+        <p class="cta-text">
+          Visit our flagship showroom to explore our full collection and speak
+          with our design consultants about creating your perfect space.
+        </p>
+        <button class="btn-primary" data-demo>Book a Consultation</button>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="site-footer" id="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#home" class="logo footer-logo" data-demo>
+            <span class="logo-main">LuxeLiving</span>
+            <span class="logo-sub">Interiors</span>
+          </a>
+          <p class="footer-tagline">
+            Crafting timeless furniture that transforms spaces and elevates
+            everyday living since 1999.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram" data-demo>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37Z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook" data-demo>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3Z" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Pinterest" data-demo>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a10 10 0 0 0-3.6 19.3c-.1-.8-.2-2 0-2.9l1.2-5s-.3-.6-.3-1.5c0-1.1.7-2 1.5-2s1.1.5 1.1 1.3c0 .8-.5 2-.8 3.2-.2.9.5 1.7 1.4 1.7 1.7 0 2.8-2.2 2.8-4.7 0-1.9-1.3-3.4-3.6-3.4a4 4 0 0 0-4.2 4c0 .8.2 1.3.6 1.8.2.2.2.3.1.5l-.2.9c-.1.3-.3.4-.6.2-1.2-.5-1.8-1.9-1.8-3.5 0-2.6 2.2-5.7 6.5-5.7 3.5 0 5.8 2.5 5.8 5.2 0 3.6-2 6.3-4.9 6.3-1 0-1.9-.5-2.2-1.1l-.6 2.3c-.2.8-.6 1.6-1 2.3A10 10 0 1 0 12 2Z" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Twitter" data-demo>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3Z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Shop</h4>
+            <ul>
+              <li><a href="#" data-demo>Sofas</a></li>
+              <li><a href="#" data-demo>Armchairs</a></li>
+              <li><a href="#" data-demo>Tables</a></li>
+              <li><a href="#" data-demo>Lighting</a></li>
+              <li><a href="#" data-demo>Bedroom</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#" data-demo>About Us</a></li>
+              <li><a href="#" data-demo>Showrooms</a></li>
+              <li><a href="#" data-demo>Careers</a></li>
+              <li><a href="#" data-demo>Press</a></li>
+              <li><a href="#" data-demo>Sustainability</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#" data-demo>Contact</a></li>
+              <li><a href="#" data-demo>Shipping</a></li>
+              <li><a href="#" data-demo>Returns</a></li>
+              <li><a href="#" data-demo>Warranty</a></li>
+              <li><a href="#" data-demo>FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p class="newsletter-text">
+            Subscribe for design inspiration, new arrivals, and exclusive offers.
+          </p>
+          <form id="newsletterForm">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> LuxeLiving Interiors. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#" data-demo>Privacy Policy</a>
+          <a href="#" data-demo>Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== Demo Modal ===== -->
+    <div class="modal-overlay" id="demoModal">
+      <div class="modal-card">
+        <button class="modal-close" id="modalClose" aria-label="Close">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M18 6 6 18M6 6l12 12" />
+          </svg>
+        </button>
+        <div class="modal-icon">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2 2 7l10 5 10-5-10-5Z" />
+            <path d="m2 17 10 5 10-5" />
+            <path d="m2 12 10 5 10-5" />
+          </svg>
+        </div>
+        <h2 class="modal-title">Portfolio Demonstration</h2>
+        <p class="modal-message" id="modalMessage"></p>
+        <button class="btn-primary modal-btn" id="modalConfirm">Got it</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
